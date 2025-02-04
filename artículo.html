@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn.tictuk.com/3621329158650180/favicon.ico" type="image/x-icon">
+    <title>POLLO FRITO COSTA RICA | KFC Costa Rica</title>
+
+    <!-- BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/contenido_articulos.css">
+    <link rel="stylesheet" href="CSS/estilos.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Sección - Header -->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light container d-flex justify-content-between align-items-center">
+
+            <!-- Botón hamburguesa (solo en móvil) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Logo -->
+            <a class="navbar-brand mx-auto mx-lg-0" href="/index.html">
+                <img src="Logos KFC/logo_header.png" alt="KFC">
+            </a>
+
+            <!-- Menú de navegación (visible en desktop y tablet) -->
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-typography="h4">NAVEGÁ POR EL MENÚ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-typography="h4">SU KFC MÁS CERCANO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" data-typography="h4">APP KFC</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Botón de usuario (visible siempre) -->
+            <button class="user-icon btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+                    class="icon icon-tabler icons-tabler-outline icon-tabler-user-circle">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                    <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0" />
+                    <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855" />
+                </svg>
+            </button>
+
+        </nav>
+    </header>
+
+    <!-- Sección - Offcanvas Menu Hamburguesa (solo en Mobile) -->
+
+    <div class="offcanvas offcanvas-start d-lg-none" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+
+        <div class="offcanvas-header">
+            <!-- Logo en lugar de "Menú" -->
+            <a class="navbar-brand mx-auto mx-lg-0" href="/index.html">
+                <img src="Logos KFC/logo_header.png" alt="KFC">
+            </a>
+            <!-- Botón de cierre -->
+            <button type="button" class="btn-close text-reset custom-close" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+
+        <div class="offcanvas-body d-flex flex-column">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">NAVEGÁ POR EL MENÚ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">SU KFC MÁS CERCANO</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">APP KFC</a>
+                </li>
+                <li class="nav-item">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                    aria-controls="flush-collapseOne">
+                                    <a class="nav-link" id="item-accordion" href="#">HORARIOS</a>
+                                </button>
+                            </h2>
+                            <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <div class="row d-flex">
+                                        <div class="col-3 day">
+                                            <p><b>Domingo</b></p>
+                                        </div>
+                                        <div class="col info">
+                                            <p>00:00AM - 08:30AM</p>
+                                            <p>09:00AM - 06:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-3 day">
+                                            <p><b>Lunes</b></p>
+                                        </div>
+                                        <div class="col info">
+                                            <p>00:00AM - 08:30AM</p>
+                                            <p>09:00AM - 06:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-3 day">
+                                            <p><b>Martes</b></p>
+                                        </div>
+                                        <div class="col info">
+                                            <p>00:00AM - 08:30AM</p>
+                                            <p>09:00AM - 06:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-3 day">
+                                            <p><b>Miércoles</b></p>
+                                        </div>
+                                        <div class="col info">
+                                            <p>00:00AM - 08:30AM</p>
+                                            <p>09:00AM - 06:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-3 day">
+                                            <p><b>Jueves</b></p>
+                                        </div>
+                                        <div class="col info">
+                                            <p>00:00AM - 08:30AM</p>
+                                            <p>09:00AM - 06:00PM</p>
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex">
+                                        <div class="col-3 day">
+                                            <p><b>Viernes</b></p>
+                                        </div>
+                                        <div class="col info">
+                                            <p>00:00AM - 08:30AM</p>
+                                            <p>09:00AM - 06:00PM</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <!-- Iconos de redes sociales -->
+            <div class="social-icons-canvas mt-auto text-center">
+                <button href="https://www.facebook.com/" class="me-2">
+                    <img src="Iconos Redes sociales/icon_black_facebook.svg" alt="facebook" width="25px">
+                </button>
+                <button href="https://www.instagram.com/" class="me-2">
+                    <img src="Iconos Redes sociales/icon_black_instagram.svg" alt="instragram" width="25px">
+                </button>
+                <button href="https://www.youtube.com/">
+                    <img src="Iconos Redes sociales/icon_black_youtube.svg" alt="youtube" width="25px">
+                </button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Sección - Modal Login -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close btn-danger" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                </div>
+
+                <div class="modal-body">
+
+                    <img class="modal-title img-fluid" id="exampleModalLabel" src="Logos KFC/logo_header.png" alt="KFC">
+
+                    <h3>INICIÁ SESIÓN O CREÁ TU CUENTA KFC</h3>
+
+                    <form>
+                        <div class="mb-3">
+                            <label for="input" id="correo" class="col-form-label">CORREO ELECTRÓNICO</label>
+                            <input type="text" class="form-control" id="input_email"
+                                placeholder="Ingresá tu correo electronico">
+                        </div>
+                        <div class="mb-3">
+                            <label for="input" id="contraseña" class="col-form-label">CONTRASEÑA</label>
+                            <input class="form-control" id="input_contraseña" placeholder="Ingresá tu contraseña">
+                        </div>
+                        <p>Al iniciar sesión, aceptás nuestras <a href="">Políticas de privacidad</a> así como los <a
+                                href="">Términos y condiciones</a>.</p>
+                        <div class="mt-3 botones_login">
+                            <button type="button" class="btn-olvidasteContraseña" data-bs-dismiss="modal">¿Olvidaste la
+                                contraseña?</button>
+                            <button type="button" class="btn-ingresar btn-danger">INGRESAR</button>
+                            <button type="button" class="btn-crearCuenta">Crear cuenta</button>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="modal-footer">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Sección - Pedí Aquí -->
+
+    <section class="seccion_pediAqui">
+
+        <div class="container">
+
+            <div class="section-title">
+
+                <div class="row">
+
+                    <div class="col-1"></div>
+
+                    <div class="seccion_pediAqui">
+
+                        <div class="titulo_pediAqui">
+
+                            <h1>EL MEJOR POLLO FRITO TE ESPERA</h1>
+                            <p>¿Qué preferís ordenar hoy?</p>
+
+                        </div>
+
+                        <div class="button-container">
+
+                            <button id="button_pediAqui">
+
+                                <img src="iconos varios/icono_mano.svg" alt="PEDÍ AQUÍ" data-typography="h5">PEDÍ AQUÍ
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-1"></div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Sección - Artículo -->
+
+    <div class="container contenido_articulo mt-5 mb-5">
+
+        <!-- Imagen - Portada Artículo -->
+        <div class=" col-sm-12 col-md-12 col-lg-12 imagen_articulo">
+
+            <img src="imagenes_blog/combinacion_perfecta.jpg" class="img-fluid"
+                alt="La combinación perfecta: Pollo frito y maratones de series">
+
+        </div>
+
+        <!-- Contenido - Artículo-->
+        <div class="col-sm-12 col-md-12 col-lg-12">
+
+            <h1>La combinación perfecta: Pollo frito y maratones de series</h1>
+
+            <p>Las noches de maratón de series o películas son el escape ideal para desconectarse
+                del día a día y disfrutar desde la comodidad del hogar. No hay mejor compañero para estas noches que un
+                <a href="">delicioso combo de KFC</a>, la combinación perfecta entre sabor y practicidad.
+            </p>
+
+            <p>Ya sea que estés solo, en familia o con amigos, <a href="index.html">KFC Costa Rica</a> te ofrece
+                una amplia variedad de opciones para llevar o pedir a domicilio, garantizando que tu comida esté lista
+                justo a tiempo para tu próxima sesión de entretenimiento.
+            </p>
+
+            <h2>Los combos de KFC: Ideales para tus noches en casa</h2>
+
+            <p>Disfrutá de una experiencia deliciosa y sin complicaciones mientras ves tus series
+                favoritas. Algunos de nuestros combos más recomendados para maratones son:
+            </p>
+
+            <ul>
+
+                <li><span>Mega Familiar:</span> Perfecto para compartir, con suficiente pollo crujiente
+                    y acompañamientos para que nadie se quede con hambre.
+                </li>
+                <li><span>Combo Clásico:</span> Ideal para una noche relajada con una porción de pollo
+                    frito, papas y bebida. Tenemos combos de 2 piezas, 3 piezas, de popcorn, de alitas, nuggets y con
+                    las deliciosas hamburguesas de pollo frito(KCS original, KCS Bacon Ranch, KCS BBQ Salad y KCS Coronel).
+                </li>
+                <li><span>Opciones personalizadas:</span> Elegí entre nuestras promociones exclusivas y
+                    adaptá tu pedido a lo que más te guste. Por ejemplo, los <span>viernes de alitas o los miércoles
+                    locos.</span> KFC tiene las mejores promociones para vos.
+                </li>
+
+            </ul>
+
+            <p>Además, con nuestro servicio a domicilio, podés recibir el pollo frito directamente
+                en tu casa, ya sea en Heredia, Curridabat o cualquier otra localidad. <a href="">Hacé tu pedido aquí.</a>
+            </p>
+
+            <h2>Recomendaciones de series y películas para enero 2025</h2>
+
+            <p>Para acompañar tus combos de <a href="index.html">KFC</a>, te dejamos una lista
+                de las series y películas más populares de Netflix este mes:
+            </p>
+
+            <b>Series recomendadas:</b>
+
+            <ul id="ul_circle">
+
+                <li>Agente Nocturno: La temporada 2 disponible desde el 7 de enero.</li>
+                <li>Bandidos: la temporada 2 disponible desde el 3 de enero.</li>
+                <li>Besos, Kitt: la temporada 2 disponible desde el 16 de enero.</li>
+
+            </ul>
+
+            <b>Películas destacadas:</b>
+
+            <ul id="ul_circle">
+
+                <li>Wallace & Gromit: La venganza se sirve con plumas: desde el 3 de enero.</li>
+                <li>De vuelta a la acción: desde el 17 de enero.</li>
+                <li>Los dos hemisferios de Lucca: desde el 31 de enero</li>
+
+            </ul>
+
+            <h2>Recomendaciones de series y películas para enero 2025</h2>
+
+            <p>No importa cuál elijás, el menú de KFC será el complemento ideal para tu noche de
+                entretenimiento. Te ofrecemos:
+            </p>
+
+            <ul>
+
+                <li><span>Practicidad</span>: Pedí tus combos desde
+                    nuestra plataforma online o app de delivery favorita.
+                </li>
+                <li><span>Variedad</span>: Opciones para todos los
+                    gustos, desde pollo frito clásico hasta acompañamientos irresistibles.
+                </li>
+                <li><span>Calidad y sabor</span>: La receta secreta de
+                    KFC garantiza que cada bocado sea una experiencia única.
+                </li>
+
+            </ul>
+
+            <p>Hacé que tus maratones de series y películas sean aún más memorables con los combos
+                de KFC. Olvidate de cocinar y disfrutá de la practicidad de nuestros servicios para
+                llevar o donde te encuentres.
+            </p>
+
+            <p><a href="">Ingresá a nuestra web</a>, elegí tu combo favorito y disfrutá de
+                la combinación perfecta para una noche inolvidable. <span>¡Te esperamos con el mejor pollo
+                frito de Costa Rica!</span>
+            </p>
+
+        </div>
+
+        <!-- Botones - Artículo -->
+        <div class="container d-flex justify-content-center">
+
+            <div class="col-sm-12 col-md-12 col-lg-10 text-center botones_articulo mt-5 mb-5">
+
+                <div class="row">
+
+                    <div class="col-sm-12 col-md-12 col-lg-10">
+                        <h3>¡Disfrutá el sabor irresistible de KFC!</h3>
+                    </div>
+
+                    <div class="col-sm-12 col-md-12 col-lg-10">
+
+                        <div class="d-flex justify-content-center gap-3">
+                            <a href="" class="btn">Nuestros Restaurantes</a>
+                            <a href="" class="btn">Comprar en Línea</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Sección - Footer -->
+
+    <footer class="py-5">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Columna 1: Logo -->
+                <div class="col-md-2 text-center mb-3 mb-md-0 logokfc_footer">
+
+                    <img src="Logos KFC/logo_KFC.png" alt="Logo KFC" class="img-fluid">
+
+                </div>
+
+                <!-- Columna 2: Nosotros -->
+                <div class="col-md-3 mb-3 col-nosotros">
+
+                    <div class="d-md-block d-none">
+
+                        <h5 class="fw-bold">NOSOTROS</h5>
+
+                        <ul class="list-unstyled">
+
+                            <li>
+                                <a href="#">Sobre Nosotros</a>
+                            </li>
+                            <li>
+                                <a href="#">¿Querés ser parte de nuestra familia?</a>
+                            </li>
+                            <li>
+                                <a href="#">Contactanos</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#">Contenido Calórico</a>
+                            </li>
+                            <li>
+                                <a href="#">Nuestra App</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Columna 3: Normativas -->
+                <div class="col-md-3 mb-3 col-normativas">
+
+                    <div class="d-md-block d-none">
+
+                        <h5 class="fw-bold">NORMATIVAS Y PRIVACIDAD</h5>
+
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="#">Términos y Condiciones</a>
+                            </li>
+                            <li>
+                                <a href="#">Políticas y Privacidad</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Columna 4: Su KFC más cercano -->
+                <div class="col-md-3 mb-3 col-ubicacion">
+
+                    <div class="d-md-block d-none">
+
+                        <h5 class="fw-bold">SÚ KFC MÁS CERCANO</h5>
+
+                        <ul class="list-unstyled">
+
+                            <li><a href="#">Ubicá tu KFC</a></li>
+                            <li><a href="#">Ver Menú</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Acordeón para móviles -->
+
+            <div class="d-md-none">
+
+                <!-- Acordeón: Nosotros -->
+
+                <div class="accordion-item border-top border-danger">
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#nosotros"
+                        aria-expanded="false">
+                        NOSOTROS
+
+                        <!-- Ícono de flecha -->
+
+                        <span class="accordion-icon">
+
+                            <svg class="icon-caret-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18 9c.852 0 1.297 .986 .783 1.623l-.076 .084l-6 6a1 1 0 0 1 -1.32 .083l-.094 -.083l-6 -6l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057v-.118l.005 -.058l.009 -.06l.01 -.052l.032 -.108l.027 -.067l.07 -.132l.065 -.09l.073 -.081l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01l.057 -.004l12.059 -.002z" />
+                            </svg>
+
+                            <svg class="icon-caret-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" />
+                            </svg>
+
+                        </span>
+
+                    </button>
+
+                    <div id="nosotros" class="accordion-collapse collapse">
+
+                        <ul class="list-unstyled px-3">
+
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">¿Querés ser parte de nuestra familia?</a></li>
+                            <li><a href="#">Contactanos</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="#">Contenido Calórico</a></li>
+                            <li><a href="#">Nuestra App</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Acordeón: Normativas -->
+
+                <div class="accordion-item border-top  border-danger mt-2">
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#normativas" aria-expanded="false">
+                        NORMATIVAS Y PRIVACIDAD
+
+                        <!-- Ícono de flecha -->
+                        <span class="accordion-icon">
+
+                            <svg class="icon-caret-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18 9c.852 0 1.297 .986 .783 1.623l-.076 .084l-6 6a1 1 0 0 1 -1.32 .083l-.094 -.083l-6 -6l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057v-.118l.005 -.058l.009 -.06l.01 -.052l.032 -.108l.027 -.067l.07 -.132l.065 -.09l.073 -.081l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01l.057 -.004l12.059 -.002z" />
+                            </svg>
+
+                            <svg class="icon-caret-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" />
+                            </svg>
+
+                        </span>
+
+                    </button>
+
+                    <div id="normativas" class="accordion-collapse collapse">
+
+                        <ul class="list-unstyled px-3">
+
+                            <li><a href="#">Términos y Condiciones</a></li>
+                            <li><a href="#">Políticas y Privacidad</a></li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <!-- Acordeón: Su KFC más cercano -->
+
+                <div class="accordion-item border-top border-bottom border-danger mt-2">
+
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#ubicacion"
+                        aria-expanded="false">
+                        SÚ KFC MÁS CERCANO
+
+                        <!-- Ícono de flecha -->
+
+                        <span class="accordion-icon">
+
+                            <svg class="icon-caret-down" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M18 9c.852 0 1.297 .986 .783 1.623l-.076 .084l-6 6a1 1 0 0 1 -1.32 .083l-.094 -.083l-6 -6l-.083 -.094l-.054 -.077l-.054 -.096l-.017 -.036l-.027 -.067l-.032 -.108l-.01 -.053l-.01 -.06l-.004 -.057v-.118l.005 -.058l.009 -.06l.01 -.052l.032 -.108l.027 -.067l.07 -.132l.065 -.09l.073 -.081l.094 -.083l.077 -.054l.096 -.054l.036 -.017l.067 -.027l.108 -.032l.053 -.01l.06 -.01l.057 -.004l12.059 -.002z" />
+                            </svg>
+                            <svg class="icon-caret-up" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M11.293 7.293a1 1 0 0 1 1.32 -.083l.094 .083l6 6l.083 .094l.054 .077l.054 .096l.017 .036l.027 .067l.032 .108l.01 .053l.01 .06l.004 .057l.002 .059l-.002 .059l-.005 .058l-.009 .06l-.01 .052l-.032 .108l-.027 .067l-.07 .132l-.065 .09l-.073 .081l-.094 .083l-.077 .054l-.096 .054l-.036 .017l-.067 .027l-.108 .032l-.053 .01l-.06 .01l-.057 .004l-.059 .002h-12c-.852 0 -1.297 -.986 -.783 -1.623l.076 -.084l6 -6z" />
+                            </svg>
+
+                        </span>
+
+                    </button>
+
+                    <div id="ubicacion" class="accordion-collapse collapse">
+
+                        <ul class="list-unstyled px-3">
+                            <li><a href="#">Ubicá tu KFC</a></li>
+                            <li><a href="#">Ver Menú</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Redes Sociales - Copyright -->
+
+            <div class="row mt-2" id="Columna_copyright">
+
+                <div class="col-12 col-md-2 d-flex justify-content-center justify-content-md-end align-items-center order-1 order-md-2"
+                    id="borde_redessociales">
+
+                    <div class="circle-container mx-2">
+
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img src="Iconos Redes sociales/icono_facebook.svg" class="img_redes" alt="facebook" />
+                        </a>
+
+                    </div>
+
+                    <div class="circle-container mx-2">
+
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img src="Iconos Redes sociales/icono_instagram.svg" class="img_redes" alt="instagram" />
+                        </a>
+
+                    </div>
+
+                    <div class="circle-container mx-2">
+
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="Iconos Redes sociales/icono_youtube.svg" class="img_redes" alt="youtube" />
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Copyright -->
+
+                <div class="col-12 col-md-10 d-flex justify-content-center align-items-center order-2 order-md-1"
+                    id="copyright_footer">
+
+                    <div class="text-center">
+
+                        <p>
+                            Copyright © KFC Corporation 2025 Todos los derechos reservados
+                            <br />
+                            Versión 1.16.131
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>
